@@ -48,7 +48,6 @@ def start_process(cmd):
     return process
 
 if __name__ == "__main__":
-    run_command('echo hello world')  # Example command to test the wrapper
     if len(sys.argv) < 2:
         print("Usage: python script_wrapper.py <command_to_run>")
         sys.exit(1)
