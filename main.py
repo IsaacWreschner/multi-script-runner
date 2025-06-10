@@ -135,10 +135,8 @@ class ScriptRunnerApp(QMainWindow):
             return f"python \"'{full_path}'\""
         elif ext == ".ps1":
             return f"pwsh -ExecutionPolicy Bypass -File \"'{full_path}'\""
-        elif ext == ".sh":
-            return f"bash \"'{full_path}'\""
         else:
-            return f"\"'{full_path}'\""
+            return f"echo 'Script extention not supported yet. pls go to \"'{full_path}'\" and run it manually.'"
 
 
 
