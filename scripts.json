@@ -1,0 +1,29 @@
+{
+  "Examples": {
+    "list": [
+      {
+        "name": "Hello PowerShell",
+        "scriptPath": "./example-scripts/hello-world.ps1"
+      },
+      {
+        "name": "Hello Python",
+        "scriptPath": "./example-scripts/hello-world.py"
+      },
+      {
+        "name": "Hello Batch",
+        "scriptPath": "./example-scripts/echo.bat"
+      },
+      {
+        "name": "Say Hello (inline)",
+        "script": "echo Hello from inline command!"
+      },
+      {
+        "name": "Multi-Step Greet",
+        "multiScript": [
+          { "script": "echo 'Step 1: Hello'" },
+          { "script": "echo 'Step 2: World'" }
+        ]
+      }
+    ]
+  }
+}

@@ -44,7 +44,7 @@ def run_commands_in_sequences(cmds):
 
 def start_process(cmd):
     global process
-    process = subprocess.Popen(cmd, shell=False)
+    process = subprocess.Popen(cmd, shell=True)
     return process
 
 if __name__ == "__main__":
@@ -68,3 +68,4 @@ if __name__ == "__main__":
         run_commands_in_sequences(parts[1:]) # skip the first empty part before the first command=
     else:
         run_command(full_input)
+
